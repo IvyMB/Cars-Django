@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Cars Shop</title>
+</head>
+    {% block content %}
+    <body>
+        <h2>Veja nosso catalogo:</h2>
+        {% for car in cars %}
+            <h3>{{car.model}}</h3>
+            <span>{{car.brand}}</span>
+        {% endfor %}
+    </body>
+    {% endblock %}
+</html>
